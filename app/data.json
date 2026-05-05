@@ -1,0 +1,56 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Nugget Ayam Premium",
+      "category": "Olahan Ayam",
+      "description": "Nugget ayam renyah dengan daging pilihan, cocok untuk bekal dan camilan keluarga."
+    },
+    {
+      "id": 2,
+      "name": "Sosis Sapi Bakar",
+      "category": "Olahan Daging",
+      "description": "Sosis sapi ukuran besar dengan tekstur padat, lezat untuk dibakar atau digoreng."
+    },
+    {
+      "id": 3,
+      "name": "Bakso Sapi Asli",
+      "category": "Olahan Daging",
+      "description": "Bakso urat dan halus dengan kuah kaldu sapi asli, kenyal dan gurih."
+    },
+    {
+      "id": 4,
+      "name": "Corndog Mozarella",
+      "category": "Camilan",
+      "description": "Corndog ala Korea dengan isian full keju mozarella yang lumer di mulut."
+    },
+    {
+      "id": 5,
+      "name": "Dimsum Mix",
+      "category": "Dimsum",
+      "description": "Aneka dimsum kukus lembut dengan varian isi ayam, udang, dan jamur."
+    },
+    {
+      "id": 6,
+      "name": "Es Krim & Dessert",
+      "category": "Pencuci Mulut",
+      "description": "Berbagai pilihan es krim segar untuk melengkapi hidangan penutup Anda."
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Evy Nurlistiani",
+      "badge": "Local Guide",
+      "rating": 5,
+      "text": "Rekomendasi frozen food terbaik di Raha! Produknya lengkap, segar, dan pelayanannya sangat memuaskan."
+    },
+    {
+      "id": 2,
+      "name": "Madzumyah Zumyah",
+      "badge": "Local Guide",
+      "rating": 5,
+      "text": "Tempat beli makanan beku langganan. Kualitas terjamin dan harganya terjangkau. Sangat mudah ditemukan lokasinya."
+    }
+  ]
+}
