@@ -12,7 +12,7 @@ export default function CardProduct({
   className,
 }: CardProps) {
   return (
-    <div className="bg-teal/20 hover:bg-ice/5 h-93.25 w-97.75 rounded-2xl border border-white/10 p-4 transition-all duration-500 hover:scale-101">
+    <div className="bg-teal/20 hover:bg-ice/5 h-93.25 w-full rounded-2xl border border-white/10 p-4 shadow-xl transition-all duration-500 hover:scale-101">
       <div className={`mb-6 h-48 w-full rounded-2xl ${className}`}></div>
       <div>
         <p className="text-ice mb-2 text-sm font-bold">{category}</p>

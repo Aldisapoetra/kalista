@@ -16,7 +16,7 @@ export default function CardReview({
   text,
 }: CardReviewProps) {
   return (
-    <div className="h-63.75 w-108 rounded-3xl border p-8">
+    <div className="mx-auto h-63.75 w-full rounded-3xl border border-white/20 p-8 shadow-xl">
       <div className="mb-6 flex gap-4">
         <div className="from-ice to-teal text-navy b flex h-14 w-14 items-center justify-center rounded-full bg-linear-120 from-0% to-100% text-xl font-bold">
           {initial}

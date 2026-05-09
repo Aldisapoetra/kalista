@@ -3,8 +3,11 @@ import { LuClock, LuMapPin, LuMessageSquare, LuPhone } from "react-icons/lu";
 
 export default function Contact() {
   return (
-    <section className="from-teal/10 to-teal/95 bg-linear-90 from-0% to-100% px-30 py-24">
-      <div className="from-ice/5 to-teal/70 grid grid-cols-2 gap-8 rounded-3xl border border-white/10 bg-linear-90 from-0% to-100% p-10">
+    <section
+      id="contact"
+      className="from-teal/10 to-teal/95 bg-linear-90 from-0% to-100% px-30 py-24"
+    >
+      <div className="from-ice/5 to-teal/70 grid gap-8 rounded-3xl border border-white/10 bg-linear-90 from-0% to-100% p-10 lg:grid-cols-2">
         <div>
           <h2 className="font-heading mb-8 text-4xl font-semibold">
             Temuan Kami
@@ -70,6 +73,7 @@ export default function Contact() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            className="w-full"
           ></iframe>
         </div>
       </div>

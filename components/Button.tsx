@@ -10,7 +10,7 @@ export default function Button({
   return (
     <a
       href={href}
-      className={`border-ice/20 rounded-full px-8 py-4 ${className}`}
+      className={`border-ice/20 block w-full rounded-full px-8 py-4 ${className}`}
     >
       {children}
     </a>

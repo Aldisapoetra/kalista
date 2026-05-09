@@ -5,12 +5,12 @@ import { FiMessageCircle } from "react-icons/fi";
 
 export default function Hero() {
   return (
-    <div className="from-teal/10 to-teal/95 flex h-screen flex-col items-center justify-center bg-linear-90 from-0% to-100%">
+    <section className="from-teal/10 to-teal/95 flex h-screen flex-col items-center justify-center bg-linear-90 from-0% to-100%">
       <motion.h1
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6 }}
-        className="font-heading mb-8 text-center text-8xl font-semibold"
+        className="font-heading mb-8 text-center text-6xl font-semibold md:text-8xl"
       >
         Kalista
         <br />
@@ -21,12 +21,12 @@ export default function Hero() {
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6 }}
-        className="text-ice mt-4 mb-8 text-2xl"
+        className="text-ice mt-4 mb-4 text-xl md:text-2xl"
       >
         Citarasa terbaik, Disimpan sempurna
       </motion.p>
 
-      <div className="mt-8 flex gap-4 text-lg">
+      <div className="gap mt-8 flex w-full flex-col gap-4 px-4 text-center text-lg md:w-max md:flex-row md:p-0">
         <motion.div
           initial={{ x: 30, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -46,6 +46,6 @@ export default function Hero() {
           </Button>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 }
