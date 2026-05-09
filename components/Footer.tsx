@@ -17,22 +17,22 @@ export default function Footer() {
         <div>
           <ul className="flex gap-8 text-white/50">
             <li>
-              <a href="" className="duration-300 hover:text-white">
-                Beranda
+              <a href="#about" className="duration-300 hover:text-white">
+                Tentang
               </a>
             </li>
             <li>
-              <a href="" className="duration-300 hover:text-white">
+              <a href="#product" className="duration-300 hover:text-white">
                 Produk
               </a>
             </li>
             <li>
-              <a href="" className="duration-300 hover:text-white">
+              <a href="#review" className="duration-300 hover:text-white">
                 Ulasan
               </a>
             </li>
             <li>
-              <a href="" className="duration-300 hover:text-white">
+              <a href="#contact" className="duration-300 hover:text-white">
                 Kontak
               </a>
             </li>
