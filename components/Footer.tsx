@@ -38,7 +38,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="text-[15px] text-white/50">
+        <div className="mb-8 text-[15px] text-white/50">
           <p>@ 2026 Kalista Frozen Food</p>
         </div>
       </div>

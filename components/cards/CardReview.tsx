@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "motion/react";
 import { LuStar } from "react-icons/lu";
 
 interface CardReviewProps {
@@ -16,7 +18,13 @@ export default function CardReview({
   text,
 }: CardReviewProps) {
   return (
-    <div className="mx-auto h-63.75 w-full rounded-3xl border border-white/20 p-8 shadow-xl">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      // viewport={{ once: true }}
+      className="mx-auto w-full rounded-3xl border border-white/20 p-8 shadow-xl"
+    >
       <div className="mb-6 flex gap-4">
         <div className="from-ice to-teal text-navy b flex h-14 w-14 items-center justify-center rounded-full bg-linear-120 from-0% to-100% text-xl font-bold">
           {initial}
@@ -35,6 +43,6 @@ export default function CardReview({
         ))}
       </div>
       <q>{text}</q>
-    </div>
+    </motion.div>
   );
 }

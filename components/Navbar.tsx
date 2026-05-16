@@ -38,15 +38,20 @@ export default function Navbar() {
             <LuPhone /> Hubungi
           </a>
         </div>
-        <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
-          <div className="flex h-7 w-7 flex-col justify-around">
+        <motion.button
+          onClick={() => setIsOpen(!isOpen)}
+          whileHover={{ scale: 1.03, y: -2 }}
+          whileTap={{ scale: 1, y: 2 }}
+          className="px-2 py-1 hover:cursor-pointer md:hidden"
+        >
+          <div className="flex h-6 w-6 flex-col justify-around">
             <motion.div
               animate={{
                 rotate: isOpen ? 45 : 0,
-                y: isOpen ? 9 : 0,
-                x: isOpen ? -4 : 0,
+                y: isOpen ? 8 : 0,
+                x: isOpen ? -3 : 0,
               }}
-              className={`bg-frost h-0.5 overflow-hidden ${isOpen ? "w-6.75" : "w-full"}`}
+              className={`bg-frost h-0.5 overflow-hidden ${isOpen ? "w-7.5" : "w-full"}`}
             ></motion.div>
             <motion.div
               animate={{ opacity: isOpen ? 0 : 1, scale: isOpen ? 0 : 1 }}
@@ -55,13 +60,13 @@ export default function Navbar() {
             <motion.div
               animate={{
                 rotate: isOpen ? -45 : 0,
-                y: isOpen ? -9 : 0,
-                x: isOpen ? -4 : 0,
+                y: isOpen ? -8 : 0,
+                x: isOpen ? -3 : 0,
               }}
-              className={`bg-frost h-0.5 overflow-hidden ${isOpen ? "w-6.75" : "w-full"}`}
+              className={`bg-frost h-0.5 overflow-hidden ${isOpen ? "w-7.5" : "w-full"}`}
             ></motion.div>
           </div>
-        </button>
+        </motion.button>
       </div>
       {/* hidden menu */}
       <AnimatePresence>
@@ -70,22 +75,29 @@ export default function Navbar() {
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 100 }}
-            className="bg-navy absolute right-0 flex h-svh w-37.5 justify-end pr-9 md:hidden"
           >
-            <ul className="flex flex-col gap-8 text-right text-white/70">
-              <li className="duration-300 hover:text-white">
-                <a href="#about">Tentang</a>
-              </li>
-              <li className="duration-300 hover:text-white">
-                <a href="#product">Produk</a>
-              </li>
-              <li className="duration-300 hover:text-white">
-                <a href="#review">Ulasan</a>
-              </li>
-              <li className="duration-300 hover:text-white">
-                <a href="#contact">kontak</a>
-              </li>
-            </ul>
+            <div className="flex">
+              <div
+                onClick={() => setIsOpen(!isOpen)}
+                className="h-dvh w-full"
+              ></div>
+              <div className="bg-navy absolute right-0 flex h-svh w-37.5 justify-end pr-9 md:hidden">
+                <ul className="flex flex-col gap-8 text-right text-white/70">
+                  <li className="duration-300 hover:text-white">
+                    <a href="#about">Tentang</a>
+                  </li>
+                  <li className="duration-300 hover:text-white">
+                    <a href="#product">Produk</a>
+                  </li>
+                  <li className="duration-300 hover:text-white">
+                    <a href="#review">Ulasan</a>
+                  </li>
+                  <li className="duration-300 hover:text-white">
+                    <a href="#contact">kontak</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
